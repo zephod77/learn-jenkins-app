@@ -46,7 +46,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    sudo npm install -g serve
+                    npm install serve
                     node_modules/.bin/serve -s build
                     npx playwriight test
                 '''
